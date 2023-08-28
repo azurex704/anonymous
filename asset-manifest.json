@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/anonymous/static/css/main.90f6920e.css",
-    "main.js": "/anonymous/static/js/main.713a517f.js",
+    "main.js": "/anonymous/static/js/main.e505f66c.js",
     "static/media/QnA-Profile.png": "/anonymous/static/media/QnA-Profile.c3f945216dc12c9498dc.png",
     "index.html": "/anonymous/index.html",
     "main.90f6920e.css.map": "/anonymous/static/css/main.90f6920e.css.map",
-    "main.713a517f.js.map": "/anonymous/static/js/main.713a517f.js.map"
+    "main.e505f66c.js.map": "/anonymous/static/js/main.e505f66c.js.map"
   },
   "entrypoints": [
     "static/css/main.90f6920e.css",
-    "static/js/main.713a517f.js"
+    "static/js/main.e505f66c.js"
   ]
 }
