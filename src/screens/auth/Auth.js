@@ -1,36 +1,28 @@
-import { useState } from "react";
-import styled, { keyframes } from "styled-components";
-import Join from "./Join";
+import styled from "styled-components";
 import Login from "./Login";
 
 const Auth = () => {
-    const [open, setOpen] = useState(false); 
+    // const [open, setOpen] = useState(false); 
 
-    const toggleForm = () => {
-      setOpen(!open);
-    };
+    // const toggleForm = () => {
+    //   setOpen(!open);
+    // };
 
     return(
         <Container>
             <Content>
-                { open ? <Join /> : <Login /> }
+                <Login />
+                {/* { open ? <Join /> : <Login /> }
 
                 <ToggleFormButton onClick={toggleForm}>
                     {open ? '이미 계정이 있으신가요?' : '계정이 없다면 회원가입을 진행해주세요.'}
-                </ToggleFormButton>
+                </ToggleFormButton> */}
             </Content>
         </Container>
     )
 };
 
-const blinkAnimation = keyframes`
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-`;
+
 
 const Container = styled.div`
     height: 100vh;
@@ -51,13 +43,22 @@ const Content = styled.div`
     align-items: center;
 `;
 
-const ToggleFormButton = styled.button`
-    margin-top: 20px;
-    background-color: transparent;
-    border: none;
-    color: rgba(45, 68, 33, 0.8);
-    cursor: pointer;
-    animation: ${blinkAnimation} 2.5s infinite;
-`;
-
 export default Auth; 
+
+// const ToggleFormButton = styled.button`
+//     margin-top: 20px;
+//     background-color: transparent;
+//     border: none;
+//     color: rgba(45, 68, 33, 0.8);
+//     cursor: pointer;
+//     animation: ${blinkAnimation} 2.5s infinite;
+// `;
+
+// const blinkAnimation = keyframes`
+//     0%, 100% {
+//         opacity: 1;
+//     }
+//     50% {
+//         opacity: 0.5;
+//     }
+// `;
